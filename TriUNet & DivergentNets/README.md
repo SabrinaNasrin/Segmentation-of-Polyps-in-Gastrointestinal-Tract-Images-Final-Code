@@ -95,8 +95,7 @@ co-located with with the 17th IEEE International Symposium on Biomedical Imaging
   year={2021}
 }
 ```
-
-
+Github link for the code ```https://github.com/vlbthambawita/divergent-nets```
 
 
 
