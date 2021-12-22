@@ -84,8 +84,8 @@ Best checkpoint paths are required. The bestcheckpoint file links are given in t
 
 ## 9) Enhancements
 We used color correction, specular removal and checked IOU with different sizes of images (image pyramid).<br/>
-The codes for this part is in ```Enhancements.ipynb``` 
-
+The codes for this part is in ```Enhancements.ipynb``` <br/>
+Give the path of the input picture and get the output.<br/>
 The results for color correction and specular removal can be seen in ```Enhancements.ipynb``` <br/>
 The results for different size of images (image pyramid) is shown below:<br/>
 
