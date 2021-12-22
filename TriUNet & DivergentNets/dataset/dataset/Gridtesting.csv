@@ -1,0 +1,7 @@
+image_path,mask_path
+/content/drive/MyDrive/DivergentNets/divergent-nets-main/Imagetest/Images/resized_image128.jpg,/content/drive/MyDrive/DivergentNets/divergent-nets-main/Imagetest/Masks/resized_image_GT128.jpg
+/content/drive/MyDrive/DivergentNets/divergent-nets-main/Imagetest/Images/resized_image256.jpg,/content/drive/MyDrive/DivergentNets/divergent-nets-main/Imagetest/Masks/resized_image_GT256.jpg
+/content/drive/MyDrive/DivergentNets/divergent-nets-main/Imagetest/Images/resized_image32.jpg,/content/drive/MyDrive/DivergentNets/divergent-nets-main/Imagetest/Masks/resized_image_GT32.jpg
+/content/drive/MyDrive/DivergentNets/divergent-nets-main/Imagetest/Images/resized_image512.jpg,/content/drive/MyDrive/DivergentNets/divergent-nets-main/Imagetest/Masks/resized_image_GT512.jpg
+/content/drive/MyDrive/DivergentNets/divergent-nets-main/Imagetest/Images/resized_image64.jpg,/content/drive/MyDrive/DivergentNets/divergent-nets-main/Imagetest/Masks/resized_image_GT64.jpg
+/content/drive/MyDrive/DivergentNets/divergent-nets-main/Imagetest/Images/resized_image1024.jpg,/content/drive/MyDrive/DivergentNets/divergent-nets-main/Imagetest/Masks/resized_image_GT1024.jpg
