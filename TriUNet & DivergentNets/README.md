@@ -9,6 +9,12 @@ This code can be executed in google colab.
 2.)segmentation_models_pytorch<br />
 3.)ipykernel<br />
 4.)albumentations<br />
+5.)pytorch <br />
+6.)torchvision <br />
+7.)tqdm<br/>
+8.)pandas<br />
+9.)numpy<br />
+10.)torchsummary<br />
 
 ```
 !pip install pyra_pytorch
@@ -16,6 +22,12 @@ This code can be executed in google colab.
 !pip install ipykernel
 !pip install albumentations==1.0.3
 ```
+## 3) Datasets:
+PolypGen dataset is used for training. The link to get the dataset is given below:<br/>
+https://www.synapse.org/#!Synapse:syn26376620
+
+Kvasir-Seg dataset is used for testing.  The link to get the dataset is given below:<br/>
+https://datasets.simula.no/kvasir-seg/
 
 ## 4) Steps for training TriUnet:
 ```
@@ -28,6 +40,11 @@ This code can be executed in google colab.
     --tensorboard_dir /content/drive/MyDrive/DivergentNets/divergent-nets-main/tensorboard_dir \
     --out_dir /content/drive/MyDrive/DivergentNets/divergent-nets-main/output_dir 
 ```
+To train other models, you have to replace tri_unet.py with one of the follwings: <br />
+unet_plusplus.py<br />
+deeplabv3.py<br />
+deeplabv3_plusplus.py<br />
+
 ## 5) Steps for testing TriUnet:
 ```
 !python /content/drive/MyDrive/DivergentNets/divergent-nets-main/tri_unet.py test \
@@ -67,6 +84,18 @@ The results for color correction and specular removal can be seen in ```Enhancem
 The results for different size of images (image pyramid) is shown below:<br/>
 
 ![alt text](https://github.com/SabrinaNasrin/Segmentation-of-Polyps-in-Gastrointestinal-Tract-Images-Final-Code/blob/main/TriUNet%20%26%20DivergentNets/image-pyramid/image%20pyramid.jpg?raw=true)
+
+## 10) Citation
+```
+@inproceedings{divergentNets,
+  title={DivergentNets: Medical Image Segmentation by Network Ensemble},
+  author={Thambawita, Vajira and Hicks, Steven A. and Halvorsen, P{\aa}l and Riegler, Michael A.},
+  booktitle={Proceedings of the 3rd International Workshop and Challenge on Computer Vision in Endoscopy (EndoCV 2021)
+co-located with with the 17th IEEE International Symposium on Biomedical Imaging (ISBI 2021)},
+  year={2021}
+}
+```
+
 
 
 
