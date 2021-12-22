@@ -79,7 +79,7 @@ Best checkpoint paths are required. The bestcheckpoint file links are given in t
     /content/drive/MyDrive/DivergentNets/divergent-nets-main/output_dir/tri_unet.py/checkpoints/best_checkpoint_TriUnet.pth \
     /content/drive/MyDrive/DivergentNets/divergent-nets-main/output_dir/tri_unet.py/checkpoints/best_checkpoint_unet_plusplus.pth
  ```
-## 8) Result for divergentnet
+## 8) Result for divergentnets
 ![alt text](https://github.com/SabrinaNasrin/Segmentation-of-Polyps-in-Gastrointestinal-Tract-Images-Final-Code/blob/main/TriUNet%20%26%20DivergentNets/prediction%20images%20for%20divergentnet/divergentnet%20result.jpg?raw=true)
 
 ## 9) Enhancements
