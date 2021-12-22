@@ -1,6 +1,8 @@
 
 # Polyp Segmentation using Unet
 
+ the Dataset CVC-612 can be downloaded from <a href="https://www.dropbox.com/s/p5qe9eotetjnbmq/CVC-ClinicDB.rar?dl=0"> here </a>
+
 ## 1) Software Dependencies:
 1.) Python version 3.8.12<br />
 2.) Pip version 21.2.2<br />
@@ -17,7 +19,7 @@
 - Create conda environment with following command conda create -n unet python=3.8
 - Activate environment with following command conda activate unet
 - Install above mentioned package dependencies
-
+ 
 ## 4) Execution Steps:
 1)Run data.py<br />
 2)Run model.py
