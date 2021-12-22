@@ -19,13 +19,14 @@ This code can be executed in google colab.
 
 ## 4) Steps for training TriUnet:
 ```
-!python /content/drive/MyDrive/DivergentNets/divergent-nets-main/tri_unet.py train \
+!python  /content/drive/MyDrive/DivergentNets/divergent-nets-main/tri_unet.py train \
     --num_epochs 200 \
-    --train_CSVs /content/drive/MyDrive/DivergentNets/divergent-nets-main/dataset/C1.csv /content/drive/MyDrive/DivergentNets/divergent-nets-main/dataset/C2.csv\
-    --val_CSVs /content/drive/MyDrive/DivergentNets/divergent-nets-main/dataset/C3.csv /content/drive/MyDrive/DivergentNets/divergent-nets-main/dataset/C4.csv \
-    --test_CSVs /content/drive/MyDrive/DivergentNets/divergent-nets-main/dataset/Gridtesting.csv \
-    --out_dir /content/drive/MyDrive/DivergentNets/divergent-nets-main/output_dir \
-    --tensorboard_dir /content/drive/MyDrive/DivergentNets/divergent-nets-main/tensorboard_dir
+    --device_id 0  \
+    --train_CSVs /content/drive/MyDrive/DivergentNets/divergent-nets-main/dataset/C1.csv /content/drive/MyDrive/DivergentNets/divergent-nets-main/dataset/C2.csv /content/drive/MyDrive/DivergentNets/divergent-nets-main/dataset/C3.csv /content/drive/MyDrive/DivergentNets/divergent-nets-main/dataset/C4.csv /content/drive/MyDrive/DivergentNets/divergent-nets-main/dataset/C5.csv /content/drive/MyDrive/DivergentNets/divergent-nets-main/dataset/C6.csv \
+    --val_CSVs /content/drive/MyDrive/DivergentNets/divergent-nets-main/dataset/seq1.csv /content/drive/MyDrive/DivergentNets/divergent-nets-main/dataset/seq2.csv /content/drive/MyDrive/DivergentNets/divergent-nets-main/dataset/seq3.csv /content/drive/MyDrive/DivergentNets/divergent-nets-main/dataset/seq4.csv /content/drive/MyDrive/DivergentNets/divergent-nets-main/dataset/seq5.csv /content/drive/MyDrive/DivergentNets/divergent-nets-main/dataset/seq6.csv /content/drive/MyDrive/DivergentNets/divergent-nets-main/dataset/seq7.csv\
+    --test_CSVs  /content/drive/MyDrive/DivergentNets/divergent-nets-main/dataset/Kvasir-seg.csv \
+    --tensorboard_dir /content/drive/MyDrive/DivergentNets/divergent-nets-main/tensorboard_dir \
+    --out_dir /content/drive/MyDrive/DivergentNets/divergent-nets-main/output_dir 
 ```
 ## 5) Steps for testing TriUnet:
 ```
@@ -55,17 +56,21 @@ This code can be executed in google colab.
     /content/drive/MyDrive/DivergentNets/divergent-nets-main/output_dir/tri_unet.py/checkpoints/best_checkpoint_TriUnet.pth \
     /content/drive/MyDrive/DivergentNets/divergent-nets-main/output_dir/tri_unet.py/checkpoints/best_checkpoint_unet_plusplus.pth
  ```
-
 ## 8) Result for divergentnet
 ![alt text](https://github.com/SabrinaNasrin/Segmentation-of-Polyps-in-Gastrointestinal-Tract-Images-Final-Code/blob/main/TriUNet%20%26%20DivergentNets/prediction%20images%20for%20divergentnet/divergentnet%20result.jpg?raw=true)
 
 ## 9) Enhancements
 We used color correction, specular removal and checked IOU with different sizes of images (image pyramid).<br/>
-The codes for this part is in ```Enhancements.ipynb```
+The codes for this part is in ```Enhancements.ipynb``` 
 
-## 10) Color Correction result
-## 11) Color Correction result
-## 12) Color Correction result
+The results for color correction and specular removal can be seen in ```Enhancements.ipynb``` <br/>
+The results for different size of images (image pyramid) is shown below:<br/>
+![alt text](https://github.com/SabrinaNasrin/Segmentation-of-Polyps-in-Gastrointestinal-Tract-Images-Final-Code/blob/main/TriUNet%20%26%20DivergentNets/prediction%20images%20for%20divergentnet/divergentnet%20result.jpg?raw=true)
+
+
+
+
+
 
 
 
