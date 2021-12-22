@@ -57,5 +57,5 @@ This code can be executed in google colab.
  ```
 
 ## 8) Results
-![alt text](https://github.com/SabrinaNasrin/Segmentation-of-Polyps-in-Gastrointestinal-Tract-Images-Final-Code/blob/main/TriUNet%20%26%20DivergentNets/prediction%20images%20for%20divergentnet/cju0qkwl35piu0993l0dewei2_mask.jpg?raw=true)
-![alt text](https://github.com/SabrinaNasrin/Segmentation-of-Polyps-in-Gastrointestinal-Tract-Images-Final-Code/blob/main/TriUNet%20%26%20DivergentNets/prediction%20images%20for%20divergentnet/cju0qoxqj9q6s0835b43399p4_mask.jpg?raw=true)
+![alt text](https://github.com/SabrinaNasrin/Segmentation-of-Polyps-in-Gastrointestinal-Tract-Images-Final-Code/blob/main/TriUNet%20%26%20DivergentNets/prediction%20images%20for%20divergentnet/divergentnet%20result.jpg?raw=true)
+
