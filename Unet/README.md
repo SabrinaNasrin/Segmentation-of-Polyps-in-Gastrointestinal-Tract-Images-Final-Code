@@ -19,7 +19,7 @@
 - Install above mentioned package dependencies
 
 ## 4) Execution Steps:
-1)Run data.py
+1)Run data.py<br />
 2)Run model.py
 
 ## 5) Training and Testing
