@@ -27,8 +27,23 @@ This code can be executed in google colab.
     --out_dir /content/drive/MyDrive/DivergentNets/divergent-nets-main/output_dir \
     --tensorboard_dir /content/drive/MyDrive/DivergentNets/divergent-nets-main/tensorboard_dir
 ```
+## 5) Steps for testing TriUnet:
+```
+!python /content/drive/MyDrive/DivergentNets/divergent-nets-main/tri_unet.py test \
+    --best_checkpoint_name /content/drive/MyDrive/DivergentNets/divergent-nets-main/output_dir/tri_unet.py/checkpoints/best_checkpoint_TriUnet.pth \
+    --num_epochs 200 \
+    --train_CSVs /content/drive/MyDrive/DivergentNets/divergent-nets-main/dataset/C1.csv /content/drive/MyDrive/DivergentNets/divergent-nets-main/dataset/C2.csv\
+    --val_CSVs /content/drive/MyDrive/DivergentNets/divergent-nets-main/dataset/C3.csv /content/drive/MyDrive/DivergentNets/divergent-nets-main/dataset/C4.csv \
+    --test_CSVs /content/drive/MyDrive/DivergentNets/divergent-nets-main/dataset/Gridtesting.csv \
+    --out_dir /content/drive/MyDrive/DivergentNets/divergent-nets-main/output_dir \
+    --tensorboard_dir /content/drive/MyDrive/DivergentNets/divergent-nets-main/tensorboard_dir
+```
 
-## 5) Testing Divergentnets
+## 6) Prediction images for TriUnet
+![alt text](https://github.com/SabrinaNasrin/Segmentation-of-Polyps-in-Gastrointestinal-Tract-Images-Final-Code/blob/main/TriUNet%20%26%20DivergentNets/Prediction%20Images%20for%20TriUnet/test_0.jpg?raw=true)
+![alt text](https://github.com/SabrinaNasrin/Segmentation-of-Polyps-in-Gastrointestinal-Tract-Images-Final-Code/blob/main/TriUNet%20%26%20DivergentNets/Prediction%20Images%20for%20TriUnet/test_1.jpg?raw=true)
+
+## 7) Testing Divergentnets
 ```
 !python /content/drive/MyDrive/DivergentNets/divergent-nets-main/inference_from_divergentNets.py \
     --input_dir /content/drive/MyDrive/DivergentNets/divergent-nets-main/Testing1 \
@@ -41,6 +56,6 @@ This code can be executed in google colab.
     /content/drive/MyDrive/DivergentNets/divergent-nets-main/output_dir/tri_unet.py/checkpoints/best_checkpoint_unet_plusplus.pth
  ```
 
-## 6) Results
-![alt text](https://github.com/SabrinaNasrin/Segmentation-of-Polyps-in-Gastrointestinal-Tract-Images-Final-Code/blob/main/Unet/results/10.png?raw=true)
-![alt text](https://github.com/SabrinaNasrin/Segmentation-of-Polyps-in-Gastrointestinal-Tract-Images-Final-Code/blob/main/Unet/results/9.png?raw=true)
+## 8) Results
+![alt text](https://github.com/SabrinaNasrin/Segmentation-of-Polyps-in-Gastrointestinal-Tract-Images-Final-Code/blob/main/TriUNet%20%26%20DivergentNets/prediction%20images%20for%20divergentnet/cju0qkwl35piu0993l0dewei2_mask.jpg?raw=true)
+![alt text](https://github.com/SabrinaNasrin/Segmentation-of-Polyps-in-Gastrointestinal-Tract-Images-Final-Code/blob/main/TriUNet%20%26%20DivergentNets/prediction%20images%20for%20divergentnet/cju0qoxqj9q6s0835b43399p4_mask.jpg?raw=true)
