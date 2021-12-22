@@ -65,6 +65,7 @@ The codes for this part is in ```Enhancements.ipynb```
 
 The results for color correction and specular removal can be seen in ```Enhancements.ipynb``` <br/>
 The results for different size of images (image pyramid) is shown below:<br/>
+
 ![alt text](https://github.com/SabrinaNasrin/Segmentation-of-Polyps-in-Gastrointestinal-Tract-Images-Final-Code/blob/main/TriUNet%20%26%20DivergentNets/image-pyramid/image%20pyramid.jpg?raw=true)
 
 
