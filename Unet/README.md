@@ -34,4 +34,5 @@
 ![alt text](https://github.com/SabrinaNasrin/Segmentation-of-Polyps-in-Gastrointestinal-Tract-Images-Final-Code/blob/main/Unet/results/9.png?raw=true)
 
 
-
+## 7) Results
+https://github.com/nikhilroxtomar/Polyp-Segmentation-using-UNET-in-TensorFlow-2.0
