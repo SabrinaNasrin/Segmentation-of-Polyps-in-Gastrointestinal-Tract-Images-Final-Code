@@ -2,16 +2,16 @@
 # Polyp Segmentation using Unet
 
 ## Software Dependencies:
-1.) Python version 3.8.12
-2.) Pip version 21.2.2
+1.) Python version 3.8.12<br />
+2.) Pip version 21.2.2<br />
 
 ## Python Package Dependencies:
-1.)matplotlib==3.2.2
-2.)numpy==1.21.2
-3.)tensorflow==2.3.0
-4.)opencv-python==4.2.0.34
-5.)tqdm==4.62.3
-6.)scikit-learn==1.0.1
+1.)matplotlib==3.2.2<br />
+2.)numpy==1.21.2<br />
+3.)tensorflow==2.3.0<br />
+4.)opencv-python==4.2.0.34<br />
+5.)tqdm==4.62.3<br />
+6.)scikit-learn==1.0.1<br />
 
 ## 1) Create environment for UNet
 - Create conda environment with following command conda create -n unet python=3.8
@@ -29,6 +29,7 @@
 
 ## Results
 ![alt text](https://github.com/SabrinaNasrin/Segmentation-of-Polyps-in-Gastrointestinal-Tract-Images-Final-Code/blob/main/Unet/results/10.png?raw=true)
+![alt text](https://github.com/SabrinaNasrin/Segmentation-of-Polyps-in-Gastrointestinal-Tract-Images-Final-Code/blob/main/Unet/results/9.png?raw=true)
 
 
 
