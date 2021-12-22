@@ -30,6 +30,9 @@ Kvasir-Seg dataset is used for testing.  The link to get the dataset is given be
 https://datasets.simula.no/kvasir-seg/
 
 ## 4) Steps for training TriUnet:
+Change the paths and give the paths of your system. <br/>
+CSV files are required to make by giving individuals system path. Details are given in the ```README.md``` of <a href="https://github.com/SabrinaNasrin/Segmentation-of-Polyps-in-Gastrointestinal-Tract-Images-Final-Code/tree/main/TriUNet%20%26%20DivergentNets"> datasets</a>  <br/>
+Event files will be created in the tensorboard_dir automatically.
 ```
 !python  /content/drive/MyDrive/DivergentNets/divergent-nets-main/tri_unet.py train \
     --num_epochs 200 \
@@ -46,15 +49,18 @@ deeplabv3.py<br />
 deeplabv3_plusplus.py<br />
 
 ## 5) Steps for testing TriUnet:
+Change the paths and give the paths of your system. <br/>
+CSV files are required to make by giving individuals system path. Details are given in the ```README.md``` of <a href="https://github.com/SabrinaNasrin/Segmentation-of-Polyps-in-Gastrointestinal-Tract-Images-Final-Code/tree/main/TriUNet%20%26%20DivergentNets"> datasets</a>  <br/>
+Best checkpoint paths are required. The bestcheckpoint file links are given in the ```README.md``` <a href="https://github.com/SabrinaNasrin/Segmentation-of-Polyps-in-Gastrointestinal-Tract-Images-Final-Code/tree/main/TriUNet%20%26%20DivergentNets/output_dir"> output_dir</a>  <br/>
 ```
 !python /content/drive/MyDrive/DivergentNets/divergent-nets-main/tri_unet.py test \
     --best_checkpoint_name /content/drive/MyDrive/DivergentNets/divergent-nets-main/output_dir/tri_unet.py/checkpoints/best_checkpoint_TriUnet.pth \
     --num_epochs 200 \
-    --train_CSVs /content/drive/MyDrive/DivergentNets/divergent-nets-main/dataset/C1.csv /content/drive/MyDrive/DivergentNets/divergent-nets-main/dataset/C2.csv\
-    --val_CSVs /content/drive/MyDrive/DivergentNets/divergent-nets-main/dataset/C3.csv /content/drive/MyDrive/DivergentNets/divergent-nets-main/dataset/C4.csv \
-    --test_CSVs /content/drive/MyDrive/DivergentNets/divergent-nets-main/dataset/Gridtesting.csv \
-    --out_dir /content/drive/MyDrive/DivergentNets/divergent-nets-main/output_dir \
-    --tensorboard_dir /content/drive/MyDrive/DivergentNets/divergent-nets-main/tensorboard_dir
+    --train_CSVs /content/drive/MyDrive/DivergentNets/divergent-nets-main/dataset/C1.csv /content/drive/MyDrive/DivergentNets/divergent-nets-main/dataset/C2.csv /content/drive/MyDrive/DivergentNets/divergent-nets-main/dataset/C3.csv /content/drive/MyDrive/DivergentNets/divergent-nets-main/dataset/C4.csv /content/drive/MyDrive/DivergentNets/divergent-nets-main/dataset/C5.csv /content/drive/MyDrive/DivergentNets/divergent-nets-main/dataset/C6.csv \
+    --val_CSVs /content/drive/MyDrive/DivergentNets/divergent-nets-main/dataset/seq1.csv /content/drive/MyDrive/DivergentNets/divergent-nets-main/dataset/seq2.csv /content/drive/MyDrive/DivergentNets/divergent-nets-main/dataset/seq3.csv /content/drive/MyDrive/DivergentNets/divergent-nets-main/dataset/seq4.csv /content/drive/MyDrive/DivergentNets/divergent-nets-main/dataset/seq5.csv /content/drive/MyDrive/DivergentNets/divergent-nets-main/dataset/seq6.csv /content/drive/MyDrive/DivergentNets/divergent-nets-main/dataset/seq7.csv\
+    --test_CSVs  /content/drive/MyDrive/DivergentNets/divergent-nets-main/dataset/Kvasir-seg.csv \
+    --tensorboard_dir /content/drive/MyDrive/DivergentNets/divergent-nets-main/tensorboard_dir \
+    --out_dir /content/drive/MyDrive/DivergentNets/divergent-nets-main/output_dir 
 ```
 
 ## 6) Prediction images for TriUnet
